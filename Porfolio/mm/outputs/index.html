@@ -1,0 +1,762 @@
+<!doctype html>==
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#090b10" />
+    <meta
+      name="description"
+      content="Jayve Valero — Filipino programmer, gamer, and future game developer. Learning, building, and exploring digital worlds."
+    />
+    <title>Jayve Valero — Programmer, Gamer, Future Game Developer</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="ambient ambient-red" aria-hidden="true"></div>
+    <div class="ambient ambient-blue" aria-hidden="true"></div>
+    <canvas class="particles" id="particles" aria-hidden="true"></canvas>
+    <div class="scroll-progress" aria-hidden="true"></div>
+      <div class="Programming class" id="progress-bar-container" aria-hidden="true">
+      <span id="progress-bar"></span>
+    </div>
+
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="wordmark" href="#home" aria-label="Jayve Valero, home"
+          ><span class="wordmark-mark">JV</span
+          ><span>JAYVE<span class="muted">.DEV</span></span></a
+        >
+        <button
+          class="menu-toggle"
+          id="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+          aria-label="Open navigation"
+        >
+          <span></span><span></span>
+        </button>
+        <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+          <a href="#about">About</a><a href="#journey">Journey</a
+          ><a href="#skills">Skills</a><a href="#gaming">Gaming</a
+          ><a href="#projects">Projects</a
+          ><a class="nav-contact" href="#contact"
+            >Contact <span aria-hidden="true">↗</span></a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero section-pad" id="home">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <div class="availability">
+              <span class="status-light"></span> Currently learning and building
+            </div>
+            <p class="eyebrow">HEY, I'M JAYVE VALERO</p>
+            <h1>
+              PROGRAMMER.<br />GAMER.<br /><span class="text-gradient"
+                >FUTURE GAME<br class="mobile-break" />
+                DEVELOPER.</span
+              >
+            </h1>
+            <p class="hero-intro">
+              I'm a Filipino programmer and gaming enthusiast who loves
+              exploring technology, writing code, and discovering how digital
+              worlds work. I'm constantly learning, experimenting with new
+              ideas, and working toward building my own software and games.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#about"
+                >Explore My World <span aria-hidden="true">↓</span></a
+              >
+              <a class="button button-quiet" href="#projects"
+                >View My Projects <span aria-hidden="true">↗</span></a
+              >
+            </div>
+            <div class="hero-meta">
+              <span
+                ><span class="meta-dot"></span> Based in the Philippines</span
+              ><span class="meta-divider"></span
+              ><span>Curious by nature. Building by choice.</span>
+            </div>
+          </div>
+
+          <div
+            class="hero-visual reveal"
+            aria-label="Decorative developer workspace illustration"
+          >
+            <div class="visual-orbit orbit-one"></div>
+            <div class="visual-orbit orbit-two"></div>
+            <div class="visual-label label-top">
+              <span class="tiny-square"></span> DIGITAL PLAYGROUND
+              <span class="label-index">/ 001</span>
+            </div>
+            <div class="code-window">
+              <div class="window-bar">
+                <div class="window-controls"><i></i><i></i><i></i></div>
+                <span>jayve@dev-space ~ profile.js</span
+                ><span class="window-lock" aria-hidden="true">⌑</span>
+              </div>
+              <div class="code-lines" aria-label="Code illustration">
+                <div>
+                  <span class="line-number">01</span
+                  ><span class="code-purple">const</span>
+                  <span class="code-blue">developer</span>
+                  <span class="code-pink">=</span> {
+                </div>
+                <div>
+                  <span class="line-number">02</span>&nbsp;&nbsp;name:
+                  <span class="code-green">"Jayve Valero"</span>,
+                </div>
+                <div>
+                  <span class="line-number">03</span>&nbsp;&nbsp;interests: [
+                </div>
+                <div>
+                  <span class="line-number">04</span
+                  >&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-green">"code"</span
+                  >, <span class="code-green">"games"</span>,
+                </div>
+                <div>
+                  <span class="line-number">05</span
+                  >&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-green"
+                    >"what's next?"</span
+                  >
+                </div>
+                <div><span class="line-number">06</span>&nbsp;&nbsp;],</div>
+                <div>
+                  <span class="line-number">07</span>&nbsp;&nbsp;mission:
+                  <span class="code-green">"build my world"</span>
+                </div>
+                <div><span class="line-number">08</span>};</div>
+                <div class="code-output">
+                  <span class="line-number">09</span
+                  ><span class="code-comment"
+                    >//
+                    <span id="typing-text">Initializing developer mode...</span
+                    ><span class="typing-cursor" aria-hidden="true"
+                      >_</span
+                    ></span
+                  >
+                </div>
+              </div>
+              <div class="window-footer">
+                <span><i class="footer-led"></i> SYSTEM ONLINE</span
+                ><span>UTF-8&nbsp;&nbsp; JS</span>
+              </div>
+            </div>
+            <div class="float-chip chip-learning">
+              <span class="chip-icon">⌘</span
+              ><span><small>STATUS</small>Learning mode</span>
+            </div>
+            <div class="float-chip chip-build">
+              <span class="chip-icon blue-icon">✳</span
+              ><span><small>NEXT OBJECTIVE</small>Make it playable</span>
+            </div>
+            <div class="visual-label label-bottom">
+              <span class="label-line"></span> ONE IDEA AT A TIME
+            </div>
+            <div class="clock-card">
+              <span class="clock-label">PHILIPPINE TIME</span
+              ><time id="philippine-clock">--:--:--</time
+              ><span id="philippine-date">Loading local time…</span>
+            </div>
+          </div>
+        </div>
+        <div class="container motto-bar">
+          <span class="motto-mark">“</span>
+          <p>
+            Code your ideas. Build your world. <span>Play your own game.</span>
+          </p>
+          <span class="motto-line"></span>
+        </div>
+      </section>
+
+      <section class="section-pad section-border" id="about">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div>
+              <p class="eyebrow">
+                <span class="section-index">01</span> GET TO KNOW ME
+              </p>
+              <h2>
+                Curiosity is my<br /><span class="text-muted"
+                  >starting point.</span
+                >
+              </h2>
+            </div>
+            <p class="heading-side">
+              A little about the person<br />behind the screen.
+            </p>
+          </div>
+          <div class="about-grid">
+            <div class="about-story reveal">
+              <p>
+                Hi! I'm Jayve Valero, a Filipino programmer who enjoys gaming,
+                computers, and technology. I love learning how applications
+                work, experimenting with code, and exploring the creative
+                possibilities of software development.
+              </p>
+              <p>
+                Games bring together creativity, technology, storytelling, and
+                challenge. That mix keeps me curious about the systems behind
+                the worlds I play in—and inspires me to learn how to make worlds
+                of my own.
+              </p>
+              <p>
+                I'm growing one project at a time: improving my programming,
+                building useful things, and moving toward a future in game
+                development.
+                <span class="accent-text"
+                  >Every project is a chance to learn something new.</span
+                >
+              </p>
+            </div>
+            <div
+              class="profile-grid reveal"
+              id="profile-cards"
+              aria-label="Personal information"
+            >
+              <article class="profile-card">
+                <span class="profile-icon" aria-hidden="true">⌖</span
+                ><span class="card-label">COUNTRY</span
+                ><strong>Philippines</strong>
+              </article>
+              <article class="profile-card">
+                <span class="profile-icon" aria-hidden="true">⌘</span
+                ><span class="card-label">ROLE</span
+                ><strong>Programmer &amp; student</strong>
+              </article>
+              <article class="profile-card">
+                <span class="profile-icon" aria-hidden="true">◉</span
+                ><span class="card-label">FAVORITE ACTIVITY</span
+                ><strong>Gaming</strong>
+              </article>
+              <article class="profile-card">
+                <span class="profile-icon" aria-hidden="true">⌁</span
+                ><span class="card-label">TECH INTERESTS</span
+                ><strong>Software, web &amp; games</strong>
+              </article>
+              <article class="profile-card">
+                <span class="profile-icon" aria-hidden="true">⟲</span
+                ><span class="card-label">CURRENT FOCUS</span
+                ><strong>Learn. Code. Build.</strong>
+              </article>
+              <article class="profile-card profile-card-goal">
+                <span class="profile-icon" aria-hidden="true">✳</span
+                ><span class="card-label">FUTURE GOAL</span
+                ><strong>Professional game developer</strong>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-pad section-border" id="journey">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div>
+              <p class="eyebrow">
+                <span class="section-index">02</span> THE PATH SO FAR
+              </p>
+              <h2>
+                Still in progress.<br /><span class="text-muted"
+                  >That's the point.</span
+                >
+              </h2>
+            </div>
+            <p class="heading-side">
+              A flexible learning roadmap.<br />These are directions, not dated
+              achievements.
+            </p>
+          </div>
+          <ol class="timeline">
+            <li class="timeline-item reveal">
+              <span class="timeline-number">01</span>
+              <div class="timeline-pin"><i></i></div>
+              <div class="timeline-content">
+                <span class="timeline-status">THE SPARK</span>
+                <h3>Discovering technology</h3>
+                <p>
+                  Exploring computers, software, and the many things a digital
+                  world can do.
+                </p>
+              </div>
+            </li>
+            <li class="timeline-item reveal">
+              <span class="timeline-number">02</span>
+              <div class="timeline-pin"><i></i></div>
+              <div class="timeline-content">
+                <span class="timeline-status">THE FOUNDATION</span>
+                <h3>Learning to code</h3>
+                <p>
+                  Getting to know programming concepts, syntax, logic, and the
+                  value of solving one problem at a time.
+                </p>
+              </div>
+            </li>
+            <li class="timeline-item reveal">
+              <span class="timeline-number">03</span>
+              <div class="timeline-pin"><i></i></div>
+              <div class="timeline-content">
+                <span class="timeline-status">HANDS ON</span>
+                <h3>Building projects</h3>
+                <p>
+                  Practicing through websites, applications, and small
+                  experiments. Make something, learn from it, repeat.
+                </p>
+              </div>
+            </li>
+            <li class="timeline-item reveal">
+              <span class="timeline-number">04</span>
+              <div class="timeline-pin"><i></i></div>
+              <div class="timeline-content">
+                <span class="timeline-status">A NEW WORLD</span>
+                <h3>Exploring game development</h3>
+                <p>
+                  Learning about game mechanics, interactive environments,
+                  scripting, and design.
+                </p>
+              </div>
+            </li>
+            <li class="timeline-item reveal">
+              <span class="timeline-number">05</span>
+              <div class="timeline-pin"><i></i></div>
+              <div class="timeline-content">
+                <span class="timeline-status">WHAT'S NEXT</span>
+                <h3>Creating the future</h3>
+                <p>
+                  Growing into more advanced projects and working toward a
+                  career building software and games.
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section-pad section-border" id="skills">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div>
+              <p class="eyebrow">
+                <span class="section-index">03</span> THE TOOLKIT IN PROGRESS
+              </p>
+              <h2>
+                Learning to make<br /><span class="text-muted"
+                  >ideas work.</span
+                >
+              </h2>
+            </div>
+            <p class="heading-side">
+              Areas I'm exploring as I grow.<br />I'll add specific tools as I
+              confirm them.
+            </p>
+          </div>
+          <div
+            class="filter-row reveal"
+            id="skill-filters"
+            role="group"
+            aria-label="Filter skills"
+          ></div>
+          <div
+            class="skill-grid reveal"
+            id="skill-grid"
+            aria-live="polite"
+          ></div>
+        </div>
+      </section>
+
+      <section class="gaming-section section-pad section-border" id="gaming">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div>
+              <p class="eyebrow">
+                <span class="section-index">04</span> PLAYER ONE, ALWAYS CURIOUS
+              </p>
+              <h2>
+                GAMING IS MORE<br />THAN A
+                <span class="text-gradient">HOBBY.</span>
+              </h2>
+            </div>
+            <p class="heading-side">
+              Exploring game worlds, mastering mechanics,<br />and noticing what
+              makes play memorable.
+            </p>
+          </div>
+          <p class="gaming-intro reveal">
+            I enjoy exploring different game worlds, mastering mechanics,
+            experiencing memorable stories, and discovering what makes games
+            fun. That interest also fuels my curiosity about how games are
+            designed and programmed.
+          </p>
+          <div class="gaming-toolbar reveal">
+            <label class="search-box"
+              ><span aria-hidden="true">⌕</span
+              ><span class="sr-only">Search games</span
+              ><input
+                id="game-search"
+                type="search"
+                placeholder="Search your collection…"
+                autocomplete="off"
+            /></label>
+            <div
+              id="game-filters"
+              class="filter-row compact"
+              role="group"
+              aria-label="Filter games by genre"
+            ></div>
+          </div>
+          <div class="game-grid" id="game-grid" aria-live="polite"></div>
+          <div class="game-actions reveal">
+            <button
+              class="button button-outline"
+              id="toggle-game-form"
+              type="button"
+              aria-expanded="false"
+              aria-controls="game-form-panel"
+            >
+              <span>＋</span> Add a game
+            </button>
+            <details class="profile-details">
+              <summary>
+                My Gaming Profile <span aria-hidden="true">⌄</span>
+              </summary>
+              <form id="gaming-profile-form" class="gaming-profile-form">
+                <label
+                  >Favorite game<input
+                    name="favoriteGame"
+                    placeholder="Add your favorite" /></label
+                ><label
+                  >Currently playing<input
+                    name="currentGame"
+                    placeholder="What are you playing?" /></label
+                ><label
+                  >Favorite genre<input
+                    name="favoriteGenre"
+                    placeholder="Your all-time genre" /></label
+                ><label
+                  >Gaming platform<input
+                    name="platform"
+                    placeholder="Console, PC, mobile…" /></label
+                ><label
+                  >Wishlist<input
+                    name="wishlist"
+                    placeholder="Games you want to play" /></label
+                ><label
+                  >Dream game to create<input
+                    name="dreamGame"
+                    placeholder="A game you'd love to make" /></label
+                ><button
+                  class="button button-primary button-small"
+                  type="submit"
+                >
+                  Save profile</button
+                ><span
+                  class="form-note"
+                  id="gaming-profile-note"
+                  role="status"
+                ></span>
+              </form>
+            </details>
+          </div>
+          <form class="game-entry-panel" id="game-form-panel" hidden>
+            <label
+              >Game title<input
+                name="title"
+                required
+                maxlength="60"
+                placeholder="A game you actually play or enjoy" /></label
+            ><label>Genre<select name="genre" required></select></label
+            ><label
+              >One-line note<input
+                name="description"
+                maxlength="120"
+                placeholder="What do you like about it?" /></label
+            ><button class="button button-primary button-small" type="submit">
+              Add to collection
+            </button>
+          </form>
+          <p class="privacy-note">
+            Your collection and profile are saved in this browser only. No games
+            are pre-filled, so your list stays personal.
+          </p>
+        </div>
+      </section>
+
+      <section class="section-pad section-border" id="projects">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div>
+              <p class="eyebrow">
+                <span class="section-index">05</span> BUILT, BUILDING &amp;
+                IMAGINED
+              </p>
+              <h2>
+                Small steps.<br /><span class="text-muted">Big worlds.</span>
+              </h2>
+            </div>
+            <p class="heading-side">
+              Real work and future ideas,<br />clearly marked.
+            </p>
+          </div>
+          <div class="project-grid" id="project-grid"></div>
+          <p class="section-footnote">
+            Project concepts are labeled
+            <span class="status-pill status-idea">IDEA</span> until they're
+            built. Add your repository and demo links in
+            <code>script.js</code> when they're ready.
+          </p>
+        </div>
+      </section>
+
+      <section
+        class="section-pad section-border workspace-section"
+        id="workspace"
+      >
+        <div class="container workspace-grid">
+          <div class="workspace-copy reveal">
+            <p class="eyebrow">
+              <span class="section-index">06</span> BEHIND THE SCREEN
+            </p>
+            <h2>
+              My developer<br /><span class="text-muted">workspace.</span>
+            </h2>
+            <p>
+              A little snapshot of the mindset I bring to every new idea: stay
+              curious, keep experimenting, and learn by making.
+            </p>
+            <div class="workspace-prompt">
+              <span class="prompt-icon">›_</span><span>jayve@dev-space:~$</span
+              ><strong id="workspace-typing"
+                >Initializing developer mode...</strong
+              ><i aria-hidden="true"></i>
+            </div>
+          </div>
+          <div
+            class="editor-window reveal"
+            aria-label="Example JavaScript code editor"
+          >
+            <div class="editor-top">
+              <div class="window-controls"><i></i><i></i><i></i></div>
+              <span>my-digital-world.js</span><span class="editor-js">JS</span>
+            </div>
+            <pre><code><span class="code-purple">const</span> developer = {
+  name: <span class="code-green">"Jayve Valero"</span>,
+  country: <span class="code-green">"Philippines"</span>,
+  interests: [
+    <span class="code-green">"Programming"</span>,
+    <span class="code-green">"Gaming"</span>,
+    <span class="code-green">"Technology"</span>,
+    <span class="code-green">"Game Development"</span>
+  ],
+  mission: <span class="code-green">"Build something awesome"</span>
+};
+
+console.log(<span class="code-green">"Welcome to my digital world!"</span>);</code></pre>
+            <div class="editor-bottom">
+              <span
+                ><i class="footer-led"></i> No errors. Just possibilities.</span
+              ><span>Ln 14, Col 1</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-pad section-border" id="goals">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div>
+              <p class="eyebrow">
+                <span class="section-index">07</span> THE FUTURE I'M BUILDING
+              </p>
+              <h2>
+                One milestone<br /><span class="text-muted">at a time.</span>
+              </h2>
+            </div>
+            <p class="heading-side">
+              A personal roadmap you can update.<br />Your checkmarks stay on
+              this device.
+            </p>
+          </div>
+          <div class="goals-grid">
+            <div class="goal-column reveal">
+              <div class="goal-heading">
+                <span class="goal-icon">◷</span>
+                <h3>Short-term goals</h3>
+              </div>
+              <div id="short-goals" class="goal-list"></div>
+            </div>
+            <div class="goal-column long-goals reveal">
+              <div class="goal-heading">
+                <span class="goal-icon">✳</span>
+                <h3>Long-term vision</h3>
+              </div>
+              <div id="long-goals" class="goal-list"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-pad section-border" id="fun">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div>
+              <p class="eyebrow">
+                <span class="section-index">08</span> OUTSIDE THE IDE
+              </p>
+              <h2>
+                Curious mind.<br /><span class="text-muted">Player heart.</span>
+              </h2>
+            </div>
+            <p class="heading-side">
+              A few things that make<br />this world feel like mine.
+            </p>
+          </div>
+          <div class="fact-grid reveal">
+            <article>
+              <span>01 / ORIGIN</span>
+              <p>
+                I'm a Filipino programmer, learning and building from the
+                Philippines.
+              </p>
+            </article>
+            <article>
+              <span>02 / PLAY</span>
+              <p>
+                Video games are one of my favorite ways to explore new worlds.
+              </p>
+            </article>
+            <article>
+              <span>03 / CURIOSITY</span>
+              <p>
+                I like finding out how technology and software work under the
+                hood.
+              </p>
+            </article>
+            <article>
+              <span>04 / NEXT LEVEL</span>
+              <p>I'm interested in creating games of my own someday.</p>
+            </article>
+            <article>
+              <span>05 / PRACTICE</span>
+              <p>Curiosity and practice help me keep improving.</p>
+            </article>
+            <article class="fact-accent">
+              <span>06 / PERSONAL MOTTO</span>
+              <p>Code your ideas. Build your world. Play your own game.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section section-pad section-border" id="contact">
+        <div class="container contact-grid">
+          <div class="contact-copy reveal">
+            <p class="eyebrow">
+              <span class="section-index">09</span> OPEN TO GOOD IDEAS
+            </p>
+            <h2>LET'S BUILD<br />SOMETHING.</h2>
+            <p>
+              Have a project idea, want to talk about programming, or share an
+              interest in gaming? I'd be happy to connect and explore new ideas.
+            </p>
+            <div
+              class="social-links"
+              id="social-links"
+              aria-label="Social profiles"
+            ></div>
+            <p class="social-hint" id="social-hint">
+              Add your real profile links in <code>script.js</code> to show them
+              here.
+            </p>
+          </div>
+          <div class="contact-form-card reveal">
+            <div class="form-card-head">
+              <span>TRANSMISSION / NEW MESSAGE</span
+              ><span class="online-mark"><i></i> READY</span>
+            </div>
+            <form id="contact-form" novalidate>
+              <label for="contact-name">Your name</label
+              ><input
+                id="contact-name"
+                name="name"
+                required
+                autocomplete="name"
+                placeholder="How should I address you?"
+              />
+              <div class="form-row">
+                <div>
+                  <label for="contact-email">Your email</label
+                  ><input
+                    id="contact-email"
+                    name="email"
+                    type="email"
+                    required
+                    autocomplete="email"
+                    placeholder="you@example.com"
+                  />
+                </div>
+                <div>
+                  <label for="contact-subject">Subject</label
+                  ><input
+                    id="contact-subject"
+                    name="subject"
+                    required
+                    placeholder="What's on your mind?"
+                  />
+                </div>
+              </div>
+              <label for="contact-message">Message</label
+              ><textarea
+                id="contact-message"
+                name="message"
+                required
+                rows="4"
+                placeholder="Tell me a little about it…"
+              ></textarea>
+              <button class="button button-primary submit-button" type="submit">
+                Check message <span aria-hidden="true">↗</span>
+              </button>
+              <p class="form-disclaimer">
+                This form checks your message in the browser but doesn't send
+                it. Configure a form service in <code>script.js</code> before
+                sharing.
+              </p>
+              <div
+                class="form-feedback"
+                id="contact-feedback"
+                role="status"
+                aria-live="polite"
+              ></div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-main">
+        <a class="wordmark" href="#home"
+          ><span class="wordmark-mark">JV</span
+          ><span>JAYVE<span class="muted">.DEV</span></span></a
+        >
+        <p>© 2026 Jayve Valero. Built with curiosity, creativity, and code.</p>
+        <a class="back-top" href="#home"
+          >Back to top <span aria-hidden="true">↑</span></a
+        >
+      </div>
+      <div class="container footer-bottom">
+        <span>MADE IN THE PHILIPPINES · ALWAYS A WORK IN PROGRESS</span>
+        <div>
+          <a href="#about">About</a><a href="#projects">Projects</a
+          ><a href="#contact">Contact</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
